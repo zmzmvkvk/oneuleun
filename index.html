@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
-    <nav>
-        <a href="/" data-link>홈</a>
-        <a href="/diary" data-link>일기장</a>
-        <a href="/profile" data-link>마이페이지</a>
-    </nav>
+    <header>
+        <div class="hamburger-menu" id="hamburgerMenu">☰</div>
+        <nav id="nav-wrap">
+            <a class="nav-btn" href="/" data-link>홈</a>
+            <a class="nav-btn" href="/diary" data-link>일기장</a>
+            <a class="nav-btn" href="/profile" data-link>마이페이지</a>
+        </nav>
+    </header>
+    <a id="logo" href="/" data-link></a>
     <div id="app"></div>
-
     <script type="module" src="./app.js"></script>
 </body>
+
 </html>

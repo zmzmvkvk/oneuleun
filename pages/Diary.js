@@ -15,7 +15,7 @@ export default function Diary() {
       });
     }
 
-    renderDiaries(); // 초기 로딩 시 일기 목록 불러오기
+    renderDiaries();
 
     saveButton.addEventListener("click", () => {
       const title = document.getElementById("diary-title").value;
@@ -27,14 +27,14 @@ export default function Diary() {
       }
 
       saveDiary(title, content);
-      renderDiaries(); // 저장 후 목록 업데이트
+      renderDiaries();
       document.getElementById("diary-title").value = "";
       document.getElementById("diary-content").value = "";
     });
   }, 0);
 
   return `
-    <div class="diary">
+    <div class="pages diary">
       <h1>일기장</h1>
       <p>오늘의 기분을 기록해보세요!</p>
 

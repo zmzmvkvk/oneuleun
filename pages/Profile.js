@@ -16,7 +16,7 @@ export default function Profile() {
         previewImg.src = profile.imageUrl;
         previewImg.style.display = "block";
       } else {
-        previewImg.src = "../assets/images/default-profile.png"; // 기본 이미지
+        previewImg.src = "/assets/images/default-profile.png"; // 기본 이미지
         previewImg.style.display = "block";
       }
       bioInput.value = profile.bio || "";
@@ -46,7 +46,7 @@ export default function Profile() {
   }, 0);
 
   return `
-    <div class="profile">
+    <div class="pages profile">
       <h1>마이페이지</h1>
       
       <label for="profile-pic">프로필 이미지:</label>
